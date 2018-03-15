@@ -8,9 +8,14 @@ class NavBar extends Component {
 
             <div className="container">
               <div className="navbar-brand">
-                <a href="/about" > {personalInfoData.name} </a>
+                <a href="/" > {personalInfoData.name} </a>
               </div>
               <ul className="nav navbar-nav pull-right">
+                <li>
+                  <a href="/about" className="nav-link" style={{ lineHeight: 'normal' }}>
+                    <span>About me</span>
+                  </a>
+                </li>
                 <li>
                   <a href={personalInfoData.resume} className="nav-link" target="_blank" style={{ lineHeight: 'normal' }}>
                     <span>Resume</span>

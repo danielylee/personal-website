@@ -4,15 +4,19 @@ import { browserHistory } from 'react-router';
 import HomePage from './HomePage';
 import About from './About';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="main-app-container">
           <NavBar />
-          <Route name="home" exact path="/" component={HomePage} />
-          <Route name="about" exact path="/About" component={About} />
+          <div className="main-app-nav">
+            <Route name="home" exact path="/" component={HomePage} />
+            <Route name="about" exact path="/about" component={About} />
+          </div>
+          <Footer />
         </div>
       </Router>
     )

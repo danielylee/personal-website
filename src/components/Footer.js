@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+
 class Footer extends Component {
   render() {
     return (
       <footer>
-        <div>
-          Footer component
-        </div>
+        <span id="footer-text-wrap">
+        Built by Daniel Lee.
+        </span>
       </footer>
     )
   }
