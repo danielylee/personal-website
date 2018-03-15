@@ -1,49 +1,62 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { personalInfoData } from '../data/personalInfo';
 class NavBar extends Component {
   render() {
     return (
-          <nav className="navbar navbar-fixed-top navbar-inner header">
-
-            <div className="container">
-              <div className="navbar-brand">
+          <div class="ui fixed inverted menu">
+            <div class="ui container">
+              <div class="header item">
                 <a href="/" > {personalInfoData.name} </a>
-              </div>
-              <ul className="nav navbar-nav pull-right">
+              <a class="item">
+                <span>About Me</span>
+              </a>
+              <a href={personalInfoData.resume} class="item">
+                <span>Resume</span>
+              </a>
+              <a href={personalInfoData.email} class="item">
+                <i class="mail icon"></i>
+              </a>
+              <a href={personalInfoData.github} class="item">
+                <i class="github icon"></i>
+              </a>
+              <a href={personalInfoData.linkedIn} class="item" target="_blank">
+                <i class="linkedin square icon"></i>
+              </a>
+            </div>
+              {/* <ul class="nav navbar-nav pull-right">
                 <li>
-                  <a href="/about" className="nav-link" style={{ lineHeight: 'normal' }}>
+                  <a href="/about" class="nav-link" style={{ lineHeight: 'normal' }}>
                     <span>About me</span>
                   </a>
                 </li>
                 <li>
-                  <a href={personalInfoData.resume} className="nav-link" target="_blank" style={{ lineHeight: 'normal' }}>
+                  <a href={personalInfoData.resume} class="nav-link" target="_blank" style={{ lineHeight: 'normal' }}>
                     <span>Resume</span>
                   </a>
                 </li>
                 <li>
-                  <a href={personalInfoData.email} className="nav-link">
-                    <i className="fa fa-envelope icon"></i>
+                  <a href={personalInfoData.email} class="nav-link">
+                    <i class="fa fa-envelope icon"></i>
                   </a>
                 </li>
                 <li>
-                  <a href={personalInfoData.github} className="nav-link" target="_blank">
-                    <i className="fa fa-github icon"></i>
+                  <a href={personalInfoData.github} class="nav-link" target="_blank">
+                    <i class="fa fa-github icon"></i>
                   </a>
                 </li>
                 <li>
-                  <a href={personalInfoData.linkedIn} className="nav-link" target="_blank">
-                    <i className="fa fa-linkedin-square icon"></i>
+                  <a href={personalInfoData.linkedIn} class="nav-link" target="_blank">
+                    <i class="fa fa-linkedin-square icon"></i>
                   </a>
                 </li>
                 <li>
-                  <a href={personalInfoData.angelList} className="nav-link" target="_blank">
-                    <i className="fa fa-angellist icon"></i>
+                  <a href={personalInfoData.angelList} class="nav-link" target="_blank">
+                    <i class="fa fa-angellist icon"></i>
                   </a>
                 </li>
-                </ul>
-            </div>
-            </nav>
+                </ul> */}
+              </div>
+          </div>
     );
   }
 }

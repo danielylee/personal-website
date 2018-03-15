@@ -10,13 +10,11 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="main-app-container">
+        <div class="ui container">
           <NavBar />
-          <div className="main-app-nav">
             <Route name="home" exact path="/" component={HomePage} />
             <Route name="about" exact path="/about" component={About} />
-          </div>
-          <Footer />
+            <Footer />
         </div>
       </Router>
     )
