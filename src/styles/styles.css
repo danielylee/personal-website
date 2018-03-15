@@ -1,11 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
+
+
 body {
   background-color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
 }
 .ui.container {
   display: block;
   max-width: 100% !important;
 }
-.ui.menu .item img.logo {
+.ui.menu.item img.logo {
   margin-right: 1.5em;
 }
 .main.container {

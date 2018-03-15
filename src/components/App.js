@@ -12,9 +12,9 @@ class App extends Component {
       <Router>
         <div class="ui container">
           <NavBar />
-            <Route name="home" exact path="/" component={HomePage} />
-            <Route name="about" exact path="/about" component={About} />
-            <Footer />
+          <Route name="home" exact path="/" component={HomePage} />
+          <Route name="about" exact path="/about" component={About} />
+          <Footer />
         </div>
       </Router>
     )
