@@ -5,20 +5,28 @@ body {
   background-color: #FFFFFF;
   font-family: "Raleway", sans-serif;
 }
-.ui.container {
+.nav-link {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  border-top: 4px solid transparent;
+  transition: border-top .3s;
+  vertical-align: baseline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.ui .container {
   display: block;
+  background-color: #3273dc;
+  color: #fff;
+  font-size: 1.25em;
   max-width: 100% !important;
 }
-.ui.menu.item img.logo {
+.ui .menu .item img.logo {
   margin-right: 1.5em;
 }
-.main.container {
+.main .container {
   margin-top: 7em;
 }
 .wireframe {
   margin-top: 2em;
-}
-.ui.footer.segment {
-  margin: 5em 0em 0em;
-  padding: 5em 0em;
 }

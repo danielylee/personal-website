@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import { browserHistory } from 'react-router';
-import HomePage from './HomePage';
+import Project from './Projects';
 import About from './About';
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -12,8 +12,8 @@ class App extends Component {
       <Router>
         <div class="ui container">
           <NavBar />
-          <Route name="home" exact path="/" component={HomePage} />
-          <Route name="about" exact path="/about" component={About} />
+          <Route name="about" exact path="/" component={About} />
+          <Route name="projects" exact path="/Projects" component={Project} />
           <Footer />
         </div>
       </Router>

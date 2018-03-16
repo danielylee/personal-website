@@ -1,62 +1,45 @@
-import React, { Component } from 'react';
-import { personalInfoData } from '../data/personalInfo';
+import React, { Component } from 'react'
+import { personalInfoData } from '../data/personalInfo'
+import { Menu, Icon } from 'semantic-ui-react'
+
+
 class NavBar extends Component {
+  state = { activeItem: 'about' }
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
   render() {
+    const { activeItem } = this.state
+
     return (
-      <div class="ui fixed inverted menu">
-        <div class="ui container">
-          <div class="header item">
-            <a href="/" > {personalInfoData.name} </a>
-            <a class="item">
-              <span>About Me</span>
-            </a>
-            <a href={personalInfoData.resume} class="item">
-              <span>Resume</span>
-            </a>
-            <a href={personalInfoData.email} class="item">
-              <i class="mail icon"></i>
-            </a>
-            <a href={personalInfoData.github} class="item">
-              <i class="github icon"></i>
-            </a>
-            <a href={personalInfoData.linkedIn} class="item" target="_blank">
-              <i class="linkedin square icon"></i>
-            </a>
-          </div>
-              {/* <ul class="nav navbar-nav pull-right">
-                <li>
-                  <a href="/about" class="nav-link" style={{ lineHeight: 'normal' }}>
-                    <span>About me</span>
-                  </a>
-                </li>
-                <li>
-                  <a href={personalInfoData.resume} class="nav-link" target="_blank" style={{ lineHeight: 'normal' }}>
-                    <span>Resume</span>
-                  </a>
-                </li>
-                <li>
-                  <a href={personalInfoData.email} class="nav-link">
-                    <i class="fa fa-envelope icon"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href={personalInfoData.github} class="nav-link" target="_blank">
-                    <i class="fa fa-github icon"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href={personalInfoData.linkedIn} class="nav-link" target="_blank">
-                    <i class="fa fa-linkedin-square icon"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href={personalInfoData.angelList} class="nav-link" target="_blank">
-                    <i class="fa fa-angellist icon"></i>
-                  </a>
-                </li>
-                </ul> */}
-              </div>
-          </div>
+      <Menu pointing secondary>
+        <Menu.Item name='about' active={activeItem === 'about'} onClick={this.handleItemClick}>
+          <a href="/" class="nav-link">
+            {personalInfoData.name}
+          </a>
+        </Menu.Item>
+        <Menu.Item name='projects' active={activeItem === 'projects'} onClick={this.handleItemClick}>
+          <a href="/Projects" class="nav-link">
+            Projects
+          </a>
+        </Menu.Item>
+        <Menu.Item>
+          <a href={personalInfoData.resume} class="nav-link" target="_blank">
+            Resume
+          </a>
+        </Menu.Item>
+          <Menu.Item position="right">
+          <a href={personalInfoData.email} class="nav-link" target="_blank">
+            <Icon name="mail icon" size="big"></Icon>
+          </a>
+          <a href={personalInfoData.github} class="nav-link" target="_blank">
+            <Icon name="github" size="big"></Icon>
+          </a>
+          <a href={personalInfoData.linkedIn} class="nav-link" target="_blank">
+            <Icon name="linkedin square" size="big"></Icon>
+          </a>
+        </Menu.Item>
+      </Menu>
     );
   }
 }
