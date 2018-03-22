@@ -4,11 +4,11 @@ import React, { Component } from 'react';
 class Footer extends Component {
   render() {
     return (
-        <div className="ui vertical footer segment">
+        <footer id="#sitemeta">
           <div className="ui center aligned container">
-            <span>Built by Daniel Lee.</span>
+            Built by Daniel Lee.
           </div>
-        </div>
+        </footer>
     )
   }
 }

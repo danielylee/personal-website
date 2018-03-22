@@ -28,6 +28,10 @@ h2 {
   line-height: 37px;
 }
 
+footer {
+  border-top: 2px solid #222;
+}
+
 a:link, a:visited {
   color: #222222;
   /* font-weight: bold; */
@@ -35,33 +39,16 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  text-decoration: bold;
+  text-decoration: none;
 }
 
-/* .nav-link {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5em;
-  border-top: 4px solid transparent;
-  transition: border-top .3s;
-  vertical-align: baseline;
-  padding-left: 20px;
-  padding-right: 20px;
+#main {
+  padding: 0px;
 }
-.ui .container {
-  display: block;
-  color: #3273dc;
-  font-size: 1.25em;
-  max-width: 100% !important;
+
+#designline {
+  margin-top: 50px;
 }
-.ui .menu .item img.logo {
-  margin-right: 1.5em;
-}
-.main .container {
-  margin-top: 7em;
-}
-.wireframe {
-  margin-top: 2em;
-} */
 /*
 -------------Masthead
 */
@@ -113,6 +100,7 @@ a:hover, a:active {
   margin-top: 20px;
   padding: 13px 0 14px 0;
   font-family: "Raleway", serif;
+  text-align: center;
 }
 
 #mainNav ul {
@@ -139,13 +127,14 @@ a:hover, a:active {
 
 #mainNav a:hover, #mainNav a:active {
   outline: none;
-  text-decoration: none;
-  border-bottom: 1px solid #222;
+  text-decoration-style: none;
+  opacity: .5;
 }
 
-#mainNav a.active {
-  text-decoration: none;
-  border-bottom: 1px solid #222;
+#mainNav a.icon:hover {
+
+  opacity: .5;
+
 }
 
 /*
@@ -157,6 +146,7 @@ a:hover, a:active {
   color: #222;
   padding: 20px 0 32px 0;
   font-family: "Raleway", serif;
+  position: absolute;
 }
 
 #sitemeta p {
@@ -167,6 +157,9 @@ a:hover, a:active {
   color: #222;
   font-weight: bold;
 }
+/*
+----------------------Random
+*/
 
 cufon {
   text-indent:0!important;

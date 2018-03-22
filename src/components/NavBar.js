@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { personalInfoData } from '../data/personalInfo'
-import { Header } from 'semantic-ui-react'
-// import { NavLink } from 'react-router-dom'
+import { Icon } from 'semantic-ui-react'
+
 
 
 class NavBar extends Component {
@@ -14,7 +14,6 @@ class NavBar extends Component {
 
     return (
       <header id="masthead" className="clearfix">
-        <div id="thehead">
           <h1>
               <a href='/'>
                   Daniel Lee
@@ -36,35 +35,28 @@ class NavBar extends Component {
                 Projects
               </a>
             </li>
+            <li>
+              <a href={personalInfoData.resume} target="_blank">
+                Resume
+              </a>
+            </li>
+            <li>
+              <a href={personalInfoData.email} className="icon" target="_blank">
+                <Icon name="mail" size="big"></Icon>
+              </a>
+            </li>
+            <li>
+              <a href={personalInfoData.github} className="icon" target="_blank">
+                <Icon name="github" size="big"></Icon>
+              </a>
+            </li>
+            <li>
+              <a href={personalInfoData.linkedIn} className="icon" target="_blank">
+                <Icon name="linkedin square" size="big"></Icon>
+              </a>
+            </li>
           </nav>
-        </div>
       </header>
-      // <Menu>
-      //   <Menu.Item >
-      //       <a href='/' className='nav-link'>
-      //         {personalInfoData.name}
-      //       </a>
-      //
-      //     <a href="/Projects" className="nav-link">
-      //       Projects
-      //     </a>
-      //
-      //     <a href={personalInfoData.resume} className="nav-link" target="_blank">
-      //       Resume
-      //     </a>
-      //   </Menu.Item>
-      //     <Menu.Item position="right">
-      //     <a href={personalInfoData.email} className="nav-link" target="_blank">
-      //       <Icon name="mail icon" size="big"></Icon>
-      //     </a>
-      //     <a href={personalInfoData.github} className="nav-link" target="_blank">
-      //       <Icon name="github" size="big"></Icon>
-      //     </a>
-      //     <a href={personalInfoData.linkedIn} className="nav-link" target="_blank">
-      //       <Icon name="linkedin square" size="big"></Icon>
-      //     </a>
-      //   </Menu.Item>
-      // </Menu>
     );
   }
 }
