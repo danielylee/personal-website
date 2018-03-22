@@ -14,7 +14,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", serif;
 }
 
 h1 {
@@ -30,7 +30,7 @@ h2 {
 
 a:link, a:visited {
   color: #222222;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-decoration: none;
 }
 
@@ -83,7 +83,7 @@ a:hover, a:active {
 }
 
 #masthead p {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", serif;
   font-size: 20px;
   color: #fff;
   margin-bottom: 0;
@@ -101,7 +101,7 @@ a:hover, a:active {
   margin-top: 20px;
   margin-bottom: -5px;
   padding: 10px 0 0 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", serif;
   text-align: center;
 }
 /*
@@ -112,7 +112,7 @@ a:hover, a:active {
   border-bottom: 2px solid #222;
   margin-top: 20px;
   padding: 13px 0 14px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", serif;
 }
 
 #mainNav ul {
@@ -156,7 +156,7 @@ a:hover, a:active {
   border-top: 2px solid #222;
   color: #222;
   padding: 20px 0 32px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", serif;
 }
 
 #sitemeta p {
