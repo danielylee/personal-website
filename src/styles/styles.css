@@ -16,8 +16,7 @@ body {
 }
 .ui .container {
   display: block;
-  background-color: #3273dc;
-  color: #fff;
+  color: #3273dc;
   font-size: 1.25em;
   max-width: 100% !important;
 }

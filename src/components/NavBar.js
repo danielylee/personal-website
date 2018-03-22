@@ -1,29 +1,28 @@
 import React, { Component } from 'react'
 import { personalInfoData } from '../data/personalInfo'
 import { Menu, Icon } from 'semantic-ui-react'
+import { NavLink } from 'react-router-dom'
 
 
 class NavBar extends Component {
-  state = { activeItem: 'about' }
+  // state = {}
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  // handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
-    const { activeItem } = this.state
+    // const { activeItem } = this.state
 
     return (
-      <Menu pointing secondary>
-        <Menu.Item name='about' active={activeItem === 'about'} onClick={this.handleItemClick}>
-          <a href="/" class="nav-link">
-            {personalInfoData.name}
-          </a>
-        </Menu.Item>
-        <Menu.Item name='projects' active={activeItem === 'projects'} onClick={this.handleItemClick}>
+      <Menu>
+        <Menu.Item >
+            <a href='/' class='nav-link'>
+              {personalInfoData.name}
+            </a>
+
           <a href="/Projects" class="nav-link">
             Projects
           </a>
-        </Menu.Item>
-        <Menu.Item>
+
           <a href={personalInfoData.resume} class="nav-link" target="_blank">
             Resume
           </a>
