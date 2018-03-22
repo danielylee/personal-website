@@ -10,10 +10,10 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div class="ui container">
+        <div>
           <NavBar />
-          <Route name="about" exact path="/" component={About} />
-          <Route name="projects" exact path="/Projects" component={Project} />
+          <Route name="about" exact path="/about" component={About} />
+          <Route name="projects" exact path="/projects" component={Project} />
           <Footer />
         </div>
       </Router>

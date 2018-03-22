@@ -4,8 +4,8 @@ import React, { Component } from 'react';
 class Footer extends Component {
   render() {
     return (
-        <div class="ui vertical footer segment">
-          <div class="ui center aligned container">
+        <div className="ui vertical footer segment">
+          <div className="ui center aligned container">
             <span>Built by Daniel Lee.</span>
           </div>
         </div>
