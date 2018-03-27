@@ -12,9 +12,9 @@ class App extends Component {
       <Router basename={process.env.PUBLIC_URL}>
         <div>
           <NavBar />
-          <Route name="home" exact path={'/'} component={Home} />
-          <Route name="about" exact path={'/about'} component={About} />
-          <Route name="projects" exact path={'/projects'} component={Project} />
+          <Route name="home" exact path='/' component={Home} />
+          <Route name="about" exact path='/about' component={About} />
+          <Route name="projects" exact path='/projects' component={Project} />
           <Footer />
         </div>
       </Router>
