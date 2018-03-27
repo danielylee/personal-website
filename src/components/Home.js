@@ -16,12 +16,6 @@ class Home extends Component {
           <div id="designline"></div>
           <article>
             <div>
-              <Image src={require('../assets/1.jpg')} fluid/>
-            </div>
-          </article>
-          <div id="designline"></div>
-          <article>
-            <div>
               <Image src={require('../assets/2.jpg')} fluid/>
             </div>
           </article>
