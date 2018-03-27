@@ -19,40 +19,35 @@ class NavBar extends Component {
                   Daniel Lee
               </a>
           </h1>
-          <div id="siteDescription">
-              <span>Software </span>
-            <canvas style={{width: 13, height: 13, top: 1, left: -1,}}></canvas>
-              <span>Engineer</span>
-          </div>
           <nav id="mainNav">
             <li>
               <a href="/about">
-                About
+                about
               </a>
             </li>
             <li>
               <a href="/projects">
-                Projects
+                projects
               </a>
             </li>
             <li>
               <a href={personalInfoData.resume} target="_blank">
-                Resume
+                resume
               </a>
             </li>
-            <li>
+            <li className="icon">
               <a href={personalInfoData.email} className="icon" target="_blank">
-                <Icon name="mail" size="big"></Icon>
+                <Icon name="mail" size="large"></Icon>
               </a>
             </li>
             <li>
               <a href={personalInfoData.github} className="icon" target="_blank">
-                <Icon name="github" size="big"></Icon>
+                <Icon name="github" size="large"></Icon>
               </a>
             </li>
             <li>
               <a href={personalInfoData.linkedIn} className="icon" target="_blank">
-                <Icon name="linkedin square" size="big"></Icon>
+                <Icon name="linkedin square" size="large"></Icon>
               </a>
             </li>
           </nav>

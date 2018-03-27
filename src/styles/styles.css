@@ -6,26 +6,28 @@ header, footer, section, article, nav, aside {
 
 body {
   background-color: #FFFFFF;
-  font: 12px/20px "Raleway", serif;
+  /* font: 12px/20px "Raleway", sans-serif; */
+  font-family: "Inconsolata", monospace;
   color: #222;
   padding-top: 25px;
   width: 500px;
   margin: 0 auto;
 }
 
-h1, h2, h3 {
-  font-family: "Raleway", serif;
-}
-
 h1 {
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 45px;
+  line-height: 30px;
   text-align: center;
 }
 
 h2 {
   font-size: 31px;
   line-height: 37px;
+}
+
+p {
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
 }
 
 footer {
@@ -40,6 +42,10 @@ a:link, a:visited {
 
 a:hover, a:active {
   text-decoration: none;
+}
+
+img {
+  width: 100%;
 }
 
 #main {
@@ -61,16 +67,16 @@ a:hover, a:active {
 }
 
 #masthead h1 a:link, #masthead h1 a:visited {
-  text-transform: Uppercase;
+  /* text-transform: Uppercase; */
   color: #222;
 }
 
-#masthead h1 a:active {
+#masthead h1 a:hover, #masthead h1 a:active {
   outline: 0;
 }
 
 #masthead p {
-  font-family: "Raleway", serif;
+  /* font-family: "Raleway", serif; */
   font-size: 20px;
   color: #fff;
   margin-bottom: 0;
@@ -83,12 +89,11 @@ a:hover, a:active {
 #siteDescription {
   font-size: 13px;
   color: #222;
-  text-transform: uppercase;
   border-top: 1px solid #222;
   margin-top: 20px;
   margin-bottom: -5px;
   padding: 10px 0 0 0;
-  font-family: "Raleway", serif;
+  /* font-family: "Raleway", serif; */
   text-align: center;
 }
 /*
@@ -99,7 +104,7 @@ a:hover, a:active {
   border-bottom: 2px solid #222;
   margin-top: 20px;
   padding: 13px 0 14px 0;
-  font-family: "Raleway", serif;
+  /* font-family: "Raleway", serif; */
   text-align: center;
 }
 
@@ -117,12 +122,11 @@ a:hover, a:active {
 
 #mainNav a:link, #mainNav a:visited {
   padding: 0;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 14px;
   margin: 0 2px;
   text-decoration: none;
-  color: #222;
-  text-transform: uppercase;
+  color: #bca474;
 }
 
 #mainNav a:hover, #mainNav a:active {
@@ -145,7 +149,7 @@ a:hover, a:active {
   border-top: 2px solid #222;
   color: #222;
   padding: 20px 0 32px 0;
-  font-family: "Raleway", serif;
+  /* font-family: "Raleway", serif; */
   position: absolute;
 }
 
@@ -161,7 +165,7 @@ a:hover, a:active {
 ----------------------Random
 */
 
-cufon {
+/* cufon {
   text-indent:0!important;
 }
 @mediascreen, projection {
@@ -192,4 +196,4 @@ cufon {
   cufon canvas {
     display:none!important;
   }
-}
+} */
