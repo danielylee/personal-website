@@ -15,18 +15,18 @@ class NavBar extends Component {
     return (
       <header id="masthead" className="clearfix">
           <h1>
-              <a href={process.env.PUBLIC_URL + '/'}>
+              <a href='/'>
                   Daniel Lee
               </a>
           </h1>
           <nav id="mainNav">
             <li>
-              <a href={process.env.PUBLIC_URL + "/about"}>
+              <a href="/about">
                 about
               </a>
             </li>
             <li>
-              <a href={process.env.PUBLIC_URL + "/projects"}>
+              <a href="/projects">
                 projects
               </a>
             </li>
