@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Image } from 'react-bootstrap';
+import React, { Component } from 'react'
+import { Image } from 'semantic-ui-react'
 
 // function importAll(r){
 //   let pictures = {};
@@ -8,28 +8,46 @@ import { Image } from 'react-bootstrap';
 // }
 // const pictures = importAll(require.context('../assets', false, '/\.jpg/'));
 
-class Home extends Component {
+export default class Home extends Component {
   render() {
     return (
-      <section id="main" className="clearfix">
-        <div>
-          <div id="designline"></div>
+      <section id='container' className='clearfix'>
+        <div className='layout'>
           <article>
             <div>
-              <Image src={require('../assets/pinata.jpg')} fluid/>
+              <Image className='picture' src={require('../assets/supremedecks.jpg')} />
             </div>
+            <blockquote>
+              <p>
+                The Last Supper Supreme decks. Year 2002
+              </p>
+            </blockquote>
           </article>
-          <div id="designline"></div>
           <article>
             <div>
-              <Image src={require('../assets/supremedecks.jpg')} fluid />
+              <Image className='picture' src={require('../assets/pinata.jpg')} />
             </div>
+            <blockquote>
+              <p>
+                Pińata - Freddie Gibbs & Madlib. Year 2014
+              </p>
+            </blockquote>
           </article>
-          <div id="designline"></div>
+          <article>
+            <div>
+              <Image className='picture' src={require('../assets/bulletsupreme.jpg')} />
+            </div>
+            <div>
+              <Image className='picture' src={require('../assets/bulletsupreme2.jpg')} />
+            </div>
+            <blockquote>
+              <p>
+                Supreme Shibuya Box Logo. Year 2012
+              </p>
+            </blockquote>
+          </article>
         </div>
       </section>
     )
   }
 }
-
-export default Home

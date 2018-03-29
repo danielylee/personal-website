@@ -4,7 +4,7 @@ import { Icon } from 'semantic-ui-react'
 
 
 
-class NavBar extends Component {
+export default class NavBar extends Component {
   // state = {}
 
   // handleItemClick = (e, { name }) => this.setState({ activeItem: name })
@@ -15,7 +15,7 @@ class NavBar extends Component {
     return (
       <header id="masthead" className="clearfix">
           <h1>
-              <a href='/'>
+              <a href="/">
                   Daniel Lee
               </a>
           </h1>
@@ -35,11 +35,6 @@ class NavBar extends Component {
                 resume
               </a>
             </li>
-            <li className="icon">
-              <a href={personalInfoData.email} className="icon" target="_blank">
-                <Icon name="mail" size="large"></Icon>
-              </a>
-            </li>
             <li>
               <a href={personalInfoData.github} className="icon" target="_blank">
                 <Icon name="github" size="large"></Icon>
@@ -50,9 +45,13 @@ class NavBar extends Component {
                 <Icon name="linkedin square" size="large"></Icon>
               </a>
             </li>
+            <li>
+              <a href={personalInfoData.email} className="icon" target="_blank">
+                <Icon name="mail outline" size="large"></Icon>
+              </a>
+            </li>
           </nav>
       </header>
     );
   }
 }
-export default NavBar;

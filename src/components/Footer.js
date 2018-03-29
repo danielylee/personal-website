@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 
-class Footer extends Component {
+export default class Footer extends Component {
   render() {
     return (
         <footer id="#sitemeta">
           <div className="ui center aligned container">
-            Built by Daniel Lee.
+            Built from scratch by Daniel Lee.
           </div>
         </footer>
     )
   }
 }
-export default Footer;
