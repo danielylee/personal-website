@@ -6,7 +6,7 @@ export default class Footer extends Component {
     return (
         <footer id="#sitemeta">
           <div className="ui center aligned container">
-            Built from scratch by Daniel Lee.
+            Engineered from scratch. Year 2018
           </div>
         </footer>
     )

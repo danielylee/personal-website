@@ -63,7 +63,7 @@ p a:hover, a:active {
 
 #main {
   padding: 0px;
-  width: 500px;
+  width: 550px;
   margin: 0 auto;
   color: #222;
   padding-top: 25px;
@@ -71,14 +71,14 @@ p a:hover, a:active {
 
 #container {
   padding: 0px;
-  width: 500px;
+  width: 550px;
   margin: 0 auto;
   color: #222;
 }
 
 .layout {
   padding: 0px;
-  width: 500px;
+  width: 550px;
   margin: 0 auto;
   color: #222;
   padding-top: 15px;
@@ -91,6 +91,10 @@ p a:hover, a:active {
   margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.picture img {
+  margin: 0 auto;
 }
 
 .picture a:hover, a:active {
