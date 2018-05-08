@@ -4,51 +4,22 @@ import Lightbox from 'react-images'
 
 const photos = [
   {
-    src: 'https://hypb.imgix.net/image/2018/05/stone-island-spring-summer-2018-deliveries-hbx-4.jpg?q=90&w=1755&fit=clip&auto=compress%2Cformat',
+    src: require("../assets/oceans.jpg"),
+    sizes: ["(min-width:480px) 50vw, (min-width: 1024px) 33.3vw, 100vw"],
+    width: 3,
+    height: 2,
+    caption: 'Ocean\'s Eleven. Year 2001'	
+  },
+  {
+    src: require("../assets/theprestige.png"),
     sizes: ["(min-width:480px) 50vw, (min-width: 1024px) 33.3vw, 100vw"],
     width: 4,
     height: 3,
-    caption: 'Stone Island Outerwear Spring/Summer 2018'
+    caption: 'The Prestige. Year 2006'
   },
-  {
-    src: require("../assets/supremedecks.jpg"),
-    sizes: ["(min-width:480px) 50vw, (min-width: 1024px) 33.3vw, 100vw"],
-    width: 4,
-    height: 3,
-    caption: "The Last Supper Supreme decks. Year 2002"
-  },
-  {
-    src:
-      "https://78.media.tumblr.com/2218bb5fc1e7aa67934cc4502d84cf57/tumblr_n2lep48xP71trt6xpo1_500.jpg",
-    sizes: ["(min-width:480px) 50vw, (min-width: 1024px) 33.3vw, 100vw"],
-    width: 3,
-    height: 3,
-    caption: 'Kendrick and Shia'
-  },
-  {
-    src: require("../assets/bulletsupreme.jpg"),
-    sizes: ["(min-width:480px) 50vw, (min-width: 1024px) 33.3vw, 100vw"],
-    width: 4,
-    height: 3,
-    caption: 'Supreme Shibuya Box Logo. Year 2012'	
-  },
-  {
-    src: require("../assets/bulletsupreme2.jpg"),
-    sizes: ["(min-width:480px) 50vw, (min-width: 1024px) 33.3vw, 100vw"],
-    width: 3,
-    height: 3,
-    caption: 'Supreme Shibuya Box Logo. Year 2012'
-  },
-  {
-    src: require("../assets/apc_carhartt.jpg"),
-    sizes: ["(min-width:480px) 50vw, (min-width: 1024px) 33.3vw, 100vw"],
-    width: 3,
-    height: 4,
-    caption: 'APC x Carhartt'
-  }
-];
+]
 
-export default class Home extends Component {
+export default class Movies extends Component {
   constructor() {
     super();
     this.state = { currentImage: 0 };

@@ -25,7 +25,7 @@ p {
 }
 
 footer {
-  border-top: 2px solid #222;
+  border-top: 2px solid #222f2c;
 }
 
 blockquote {
@@ -63,24 +63,24 @@ p a:hover, a:active {
 
 #main {
   padding: 0px;
-  width: 550px;
+  width: 750px;
   margin: 0 auto;
-  color: #222;
+  color: #222f2c;
   padding-top: 25px;
 }
 
 #container {
   padding: 0px;
-  width: 550px;
+  width: 750px;
   margin: 0 auto;
-  color: #222;
+  color: #222f2c;
 }
 
 .layout {
   padding: 0px;
-  width: 550px;
+  width: 750px;
   margin: 0 auto;
-  color: #222;
+  color: #222f2c;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -113,11 +113,12 @@ p a:hover, a:active {
 }
 
 #masthead h1 a:link, #masthead h1 a:visited {
-  color: #222;
+  color: #222f2c;
 }
 
 #masthead h1 a:hover, #masthead h1 a:active {
   outline: 0;
+  opacity: .5;
 }
 
 #masthead p {
@@ -132,8 +133,8 @@ p a:hover, a:active {
 
 #siteDescription {
   font-size: 13px;
-  color: #222;
-  border-top: 1px #222;
+  color: #222f2c;
+  border-top: 1px #222f2c;
   margin-top: 20px;
   margin-bottom: -5px;
   padding: 10px 0 0 0;
@@ -142,11 +143,12 @@ p a:hover, a:active {
 /*
 ------------------------------------NavBar
 */
+
 #mainNav {
-  border-top: 1px solid #222;
-  border-bottom: 2px solid #222;
+  border-top: 1px solid #222f2c;
+  border-bottom: 2px solid #222f2c;
   margin-top: 20px;
-  padding: 13px 0 14px 0;
+  padding: 15px 0 14px 0;
   text-align: center;
 }
 
@@ -157,7 +159,7 @@ p a:hover, a:active {
 }
 
 #mainNav li {
-  margin: 5px;
+  margin: 20px;
   display: inline;
   padding: 0;
 }
@@ -189,7 +191,7 @@ p a:hover, a:active {
 
 #sitemeta {
   border-top: 2px solid #222;
-  color: #222;
+  color: #222f2c;
   padding: 20px 0 32px 0;
   position: absolute;
 }
@@ -199,6 +201,6 @@ p a:hover, a:active {
 }
 
 #sitemeta a:link, #sitemeta a:visited {
-  color: #222;
+  color: #222f2c;
   font-weight: bold;
 }

@@ -12,7 +12,7 @@ export default class About extends Component {
             These are some of my favorite&nbsp;<a href="/movies">movies/shows</a>&nbsp;and&nbsp;<a href="/albums">albums.</a>
           </p>
           <p>
-            If you have any inquiries or would like to talk about film or music, connect with me on Linkedin or send me an email.
+            If you have any inquiries or would like to talk about film or music, connect with me on Linkedin or send me an email!
           </p>
         </div>
       </section>

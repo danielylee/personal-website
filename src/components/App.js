@@ -10,7 +10,7 @@ import Movies from './Movies'
 export default class App extends Component {
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <div id="main">
           <NavBar />
           <Route name="home" exact path="/" component={Home} />

@@ -7954,7 +7954,7 @@ i.big.icon,
 i.big.icons {
   line-height: 1;
   vertical-align: middle;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 i.huge.icon,
@@ -13217,7 +13217,6 @@ img.ui.image {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 0 auto;
 }
 
 /*******************************
@@ -16793,6 +16792,7 @@ ol.ui.horizontal.list li:before,
 *******************************/
 
 .ui.indeterminate.loader:after {
+  -webkit-animation-direction: reverse;
   animation-direction: reverse;
   -webkit-animation-duration: 1.2s;
   animation-duration: 1.2s;

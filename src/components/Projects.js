@@ -18,6 +18,13 @@ export default class Project extends Component {
             </a>
             &nbsp;- A Discord bot that reads user commands in a server to play songs from Youtube into a voice channel.
           </p>
+          <p className="project">
+            <a href={"https://go-chat123.herokuapp.com"} target="_blank">
+              Anonymous Chat Room
+            </a>
+            &nbsp;- Instant message application with multiple rooms, fully anonymous.
+            <a href={personalInfoData.github + '/chat-room'} target="_blank" > src</a>
+          </p>
         </div>
       </section>
     )
